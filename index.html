@@ -4,7 +4,31 @@
    <title>Trippy EEG art</title>
  </head>
  <body>
-   <script src="bundle.js"></script>
    <canvas></canvas>
- </body>
+
+
+
+<div class="settings">
+          <div id="title">
+          <div class = "round-button">
+            <svg id="hide-toggle" viewBox="0 0 16 16">
+              <polygon points="3,11 8,3 13,11"/>
+            </svg>
+          </div>
+          Settings
+        </div>
+  <label>Wave height</label><input type="range" id="height" min="1" max="250" value="125">
+  <label>Wave width</label><input type="range" id="width" min="1" max="300" value="150">
+  <label>Wave speed</label><input type="range" id="speed" min="0" max="20000">
+  <label>Circle Size</label><input type="range" id="circle" min="1" max="50" value="25">
+  <label>Clear Canvas</label><input type="checkbox" id="clear" checked>
+</div>
+
+<div class="frame">
+  <div class="background"></div>
+  <h4 id="formula"></h4>
+</div>
+<script src="bundle.js"></script>
+
+</body>
 </html>
