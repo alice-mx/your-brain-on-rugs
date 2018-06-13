@@ -2,35 +2,20 @@
 <html>
  <head>
    <title>Trippy EEG art</title>
+
+
+
+
  </head>
  <body>
 
+<button id="mandela">Mandela</button>
+<button id="shader-button">Shader Button</button>
 
-<svg viewBox="0 0 10 10">
-  <circle r="5" cx="5" cy="5"/>
-</svg>
-<div class="settings">
-          <div id="title">
-          <div class = "round-button">
-            <svg id="hide-toggle" viewBox="0 0 16 16">
-              <polygon points="3,11 8,3 13,11"/>
-            </svg>
-          </div>
-          Settings
-        </div>
-  <label>Wave height</label><p id="height"></p>
-  <label>Wave width</label><p id="width"></p>
-  <label>Saturation</label><p id="saturation"></p>
 
-  <label>Attention</label><p id="attention"></p>
+<canvas id="canvas"></canvas>
 
-  <label>Wave speed</label><p id="speed"></p>
-  <label>Circle Size</label><input type="range" id="circle" min="1" max="50" value="25">
-  <label>Clear Canvas</label><input type="checkbox" id="clear" checked>
-</div>
 
-  <div class="background"></div>
-  <h4 id="formula"></h4>
 <script src="bundle.js"></script>
 
 </body>
