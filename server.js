@@ -8,7 +8,6 @@ var express = require('express');
 var app = express();
 
 var blink = {};
-const hostname = 'localhost';
 const port = 3000;
 
 var brainData = [];
@@ -57,7 +56,6 @@ var past = [];
 var prev = Date.now();
 client.on('data',function(data){
 
-	console.log(Date.now()-prev);
   prev = Date.now();
   data.timestamp = Date.now();
   var json = JSON.stringify(data);
@@ -67,7 +65,6 @@ client.on('data',function(data){
 
 
 client.on('blink_data', function(data) {
-  console.log(data);
   data.timestamp = Date.now();
   blink = data;
 })
