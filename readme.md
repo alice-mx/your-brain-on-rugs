@@ -6,7 +6,7 @@ This is a side project I've been working on that uses the NeuroSky MindWave Mobi
 
 The MindWave transmits a dozen or so different readings every second. These are used to power different parts of the the visualisation - for example, the overall saturation of each brush stroke or the xy coordinates of a brush.
 
-[Example Visualisation](examples/mandela.gif)
+![Example Visualisation](examples/mandela.gif)
 
 ## Getting Started/Prerequisites
 
