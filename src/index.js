@@ -18,12 +18,16 @@ canvas.setBackground("black");
 var visual = new Shaders();
 
 button.onclick = function() {
+  shaderButton.classList.remove('active');
+  button.classList.add('active');
   canvas.clear();
   visual = new Mandela();
 }
 
 shaderButton.onclick = function() {
-  canvas.setBackground("black");
+  shaderButton.classList.add('active');
+  button.classList.remove('active');
+
   canvas.clear();
   visual  = new Shaders();
 }
